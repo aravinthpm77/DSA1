@@ -30,6 +30,7 @@ public class marriage {
                 g = new char[lst.size()];
                 for (int k = 0; k < lst.size(); k++) {
                     g[k] = lst.get(k);
+                    g[k]=lst.get(k+1);
                 }
                 lst.clear();
                 count = 0;
