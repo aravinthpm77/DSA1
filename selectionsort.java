@@ -1,6 +1,4 @@
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+
 import java.util.Random;
 
 public class selectionsort {
@@ -26,12 +24,13 @@ public class selectionsort {
         
         Random rd= new Random();
         int arr[]=new int[6];
+        long start=System.currentTimeMillis();
         System.out.println("Before Sorting :");
         for(int i=0;i<arr.length;i++){
             arr[i]=rd.nextInt(100000000);
             System.err.print(arr[i]+" ");
         }
-        long start=System.currentTimeMillis();
+        
         // System.err.println("Before Sorting Current time :" +start);
         System.err.println();
         sort(arr);
@@ -39,8 +38,8 @@ public class selectionsort {
             System.err.print(arr[i]+" ");
         }
         long end =System.currentTimeMillis();
-        System.err.println();
+        System.out.println();
         // System.err.println("After Sorting Current Time "+end);
-        System.err.println("Total time : "+(end-start)+" millisecond");
+        System.out.println("Total time : "+(end-start)+" millisecond");
     }
 }
